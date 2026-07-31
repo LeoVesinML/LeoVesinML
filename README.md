@@ -6,7 +6,7 @@
 
 Building measurable intelligent systems across **machine learning, information retrieval, recommender systems and mathematical optimisation**.
 
-[![Email](https://img.shields.io/badge/Email-vesin.leo%40gmail.com-111827?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vesin.leo@gmail.com)
+[![Email](https://img.shields.io/badge/Email-vesin.lev%40gmail.com-111827?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vesin.lev@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-LeoVesinML-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LeoVesinML)
 [![Research Award](https://img.shields.io/badge/Research_Award-2025-111827?style=for-the-badge&logo=academia&logoColor=white)](https://media.innopolis.university/news/Research-Award-2025/)
 
@@ -94,19 +94,13 @@ Contributed to a completed team project focused on conversational AI and persona
 
 [View the team repository](https://github.com/swp-team-1/MultiAgent-RecSys-for-Namaz.app)
 
-## Selected achievements
+## Selected technical achievements
 
 - **Winner — Innopolis University Research Award 2025**
 - Represented Innopolis University in **ICPC**
 - **Top 8 — TechArena Kazan Challenge**, optimisation of 6G traffic
 - **Finalist — Game AI Contest Arena (GAICA)**
 - Participant — Singularity “Smart Breakthrough” blockchain hackathon
-
-## Beyond engineering
-
-- Top 250 in Russia in racketlon
-- Competitive arm wrestler
-- Founder and author of a poetry page with **15,000+ readers** — [read the work](https://stihi.ru/avtor/levvizan)
 
 ## Technical stack
 
