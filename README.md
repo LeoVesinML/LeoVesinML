@@ -100,15 +100,6 @@ Contributed to a conversational recommendation system built with Python, FastAPI
 - Document limitations, failure cases and next steps
 - Keep experiments reproducible and claims scoped to evidence
 
-## GitHub activity
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=LeoVesinML&show_icons=true&hide_border=true&rank_icon=github&theme=transparent" alt="Leo Vesin GitHub statistics" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LeoVesinML&layout=compact&hide_border=true&theme=transparent" alt="Most used languages" />
-
-</div>
-
 ---
 
 <div align="center">
