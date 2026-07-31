@@ -31,7 +31,7 @@ I care about systems that are **measurable**, not only demo-able:
 - transparent baselines before complex models
 - reproducible experiments and clear claim boundaries
 
-Public research page: [SemanticSplat on Vercel](https://beyond-proximity-public.vercel.app) · [GitHub Pages](https://leovesinml.github.io/beyond-proximity-public/)
+Public research page: [SemanticSplat on Vercel](https://beyond-proximity-public.vercel.app)
 
 ---
 
