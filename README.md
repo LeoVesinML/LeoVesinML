@@ -1,27 +1,24 @@
 <div align="center">
 
-# Leo Vesin
+<img src="assets/hero.svg" alt="Leo Vesin — AI Research and Machine Learning Engineering" width="100%" />
 
-### AI Researcher · Machine Learning Engineer · Computer Science Student
+<br />
 
-Building measurable systems in **machine learning, information retrieval, recommender systems and optimisation**.
-
-[![Email](https://img.shields.io/badge/Email-vesin.lev%40gmail.com-111827?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vesin.lev@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-LeoVesinML-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LeoVesinML)
-[![Research Award](https://img.shields.io/badge/Research_Award-2025-111827?style=for-the-badge&logo=academia&logoColor=white)](https://media.innopolis.university/news/Research-Award-2025/)
+[![Email](https://img.shields.io/badge/Email-vesin.leo%40gmail.com-0f172a?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vesin.leo@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-LeoVesinML-0f172a?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LeoVesinML)
+[![Research Award](https://img.shields.io/badge/Innopolis_Research_Award-2025-0f172a?style=for-the-badge&logo=academia&logoColor=white)](https://media.innopolis.university/news/Research-Award-2025/)
 
 </div>
 
----
+## Profile
 
-## About
+AI and Computer Science student with research and engineering experience across **machine learning, QUBO optimisation, information retrieval, recommender systems and conversational AI**.
 
-- Two years of undergraduate study in **Applied Artificial Intelligence** at Innopolis University
-- Former **Research Assistant at Q-Deep Research Lab**
-- Focused on **QUBO optimisation, reinforcement learning, information retrieval and conversational recommendation**
-- Experienced in Python experimentation, dataset preparation, model evaluation and technical documentation
+I completed two undergraduate years in Applied Artificial Intelligence at Innopolis University and worked as a Research Assistant at Q-Deep Research Lab. My work has included scientific literature review, mathematical formulation of optimisation problems, Python experimentation, dataset preparation, model evaluation, visualisation and technical documentation.
 
-## Featured projects
+I care about systems that are **measurable, reproducible and honest about their limitations**.
+
+## Selected work
 
 <table>
 <tr>
@@ -31,16 +28,16 @@ Building measurable systems in **machine learning, information retrieval, recomm
 
 Research prototype for graph-pruned semantic search in 3D Gaussian Splatting digital twins.
 
-**Focus:** semantic retrieval, 3D search, reproducible evaluation
+`semantic retrieval` `3D search` `evaluation` `research`
 
 </td>
 <td width="50%" valign="top">
 
 ### [NamazApp Support Recommender](https://github.com/LeoVesinML/namaz_recommender)
 
-A transparent FAQ retrieval baseline using TF-IDF and similarity search.
+Transparent FAQ retrieval baseline using TF-IDF and similarity search, designed for explainable support recommendations.
 
-**Focus:** NLP, information retrieval, Flask, evaluation-ready architecture
+`NLP` `information retrieval` `Flask` `Python`
 
 </td>
 </tr>
@@ -49,18 +46,18 @@ A transparent FAQ retrieval baseline using TF-IDF and similarity search.
 
 ### [Voice AI](https://github.com/LeoVesinML/voice-ai)
 
-A Next.js voice application built around conversational AI and speech interaction.
+Voice-first conversational application built with Next.js and modern speech/LLM integrations.
 
-**Focus:** TypeScript, Next.js, Hume Voice, OpenAI integrations
+`TypeScript` `Next.js` `speech AI` `LLM integration`
 
 </td>
 <td width="50%" valign="top">
 
 ### [Verilog FFT](https://github.com/LeoVesinML/VerilogFFT)
 
-A hardware-oriented Fast Fourier Transform implementation in Verilog.
+Hardware-oriented Fast Fourier Transform implementation demonstrating digital design and algorithmic thinking.
 
-**Focus:** digital design, DSP, algorithms
+`Verilog` `DSP` `digital systems` `algorithms`
 
 </td>
 </tr>
@@ -70,35 +67,71 @@ A hardware-oriented Fast Fourier Transform implementation in Verilog.
 
 ### Q-Deep Research Lab — Research Assistant
 
-Worked on QUBO formulations, quantum-inspired optimisation and experimental evaluation in Python. Reviewed academic literature, implemented optimisation workflows, analysed parameter sensitivity and documented research results.
+- Reviewed literature on quantum annealing, QUBO and hybrid classical–quantum optimisation.
+- Helped translate optimisation problems into binary formulations with objectives, constraints and penalty terms.
+- Implemented and evaluated experimental algorithms in Python.
+- Analysed solution quality, computational efficiency and parameter sensitivity.
+- Organised results, produced visualisations and documented limitations and possible improvements.
 
 ### MARS — Multi-Agent Recommender System for Namaz.app
 
-Contributed to a conversational recommendation system built with Python, FastAPI and MongoDB. Worked on asynchronous request processing, API structure, user interaction data and deployment-oriented engineering.
+Contributed to a completed team project focused on conversational AI and personalised recommendation. Worked with Python, FastAPI, asynchronous request processing and MongoDB, while gaining experience in API design, modular architecture, Git-based teamwork, testing, technical documentation, Docker and deployment.
 
 [View the team repository](https://github.com/swp-team-1/MultiAgent-RecSys-for-Namaz.app)
 
-## Selected technical achievements
+## Recognition
 
 - **Winner — Innopolis University Research Award 2025**
 - Represented Innopolis University in **ICPC**
 - **Top 8 — TechArena Kazan Challenge**, optimisation of 6G traffic
 - **Finalist — Game AI Contest Arena (GAICA)**
 - Participant — Singularity “Smart Breakthrough” blockchain hackathon
+- Competitive arm wrestler and Top 250 in Russia in racketlon
+- Founder of a poetry page with more than 15,000 readers
 
-## Technical stack
+## Technical toolkit
 
-**Core:** Python · NumPy · Pandas · scikit-learn · Git · Linux  
-**Backend & data:** FastAPI · Flask · MongoDB · SQL · Docker  
-**Frontend & product:** TypeScript · Next.js · React  
-**Research interests:** PyTorch · reinforcement learning · GNNs · QUBO
+<table>
+<tr>
+<td><strong>Machine learning</strong></td>
+<td>Python, NumPy, Pandas, scikit-learn, PyTorch, model evaluation</td>
+</tr>
+<tr>
+<td><strong>AI systems</strong></td>
+<td>Information retrieval, recommender systems, conversational AI, reinforcement learning, GNNs, QUBO</td>
+</tr>
+<tr>
+<td><strong>Backend and data</strong></td>
+<td>FastAPI, Flask, MongoDB, SQL, Docker, asynchronous processing</td>
+</tr>
+<tr>
+<td><strong>Frontend and product</strong></td>
+<td>TypeScript, React, Next.js</td>
+</tr>
+<tr>
+<td><strong>Engineering</strong></td>
+<td>Git, Linux, testing, technical documentation, reproducible experimentation</td>
+</tr>
+</table>
 
-## Engineering principles
+## Working principles
 
-- Prefer measurable results over vague AI claims
-- Start with transparent baselines before adding complexity
-- Document limitations, failure cases and next steps
-- Keep experiments reproducible and claims scoped to evidence
+- Build a transparent baseline before adding complexity.
+- Measure quality with appropriate metrics instead of relying on demos alone.
+- Document assumptions, limitations and failure cases.
+- Keep experiments reproducible and claims proportional to evidence.
+- Treat research communication as part of engineering quality.
+
+## GitHub activity
+
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=LeoVesinML&show_icons=true&hide_border=true&rank_icon=github&theme=transparent" alt="Leo Vesin GitHub statistics" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LeoVesinML&layout=compact&hide_border=true&theme=transparent&langs_count=8" alt="Most used languages" />
+
+<img src="https://streak-stats.demolab.com?user=LeoVesinML&hide_border=true&theme=transparent" alt="GitHub contribution streak" />
+
+</div>
 
 ---
 
@@ -106,6 +139,6 @@ Contributed to a conversational recommendation system built with Python, FastAPI
 
 ### Open to AI research collaborations, internships and software engineering opportunities
 
-*Turning research ideas into measurable, reproducible systems.*
+**Turning research ideas into measurable, reproducible systems.**
 
 </div>
