@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="112" viewBox="0 0 1200 112" role="img" aria-labelledby="title desc">
+  <title id="title">Open-source activity</title>
+  <desc id="desc">A professional section header for Leo Vesin's contribution graph.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#08111f"/>
+      <stop offset="100%" stop-color="#0a2a2f"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="112" rx="22" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="110" rx="21" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
+  <rect x="48" y="31" width="6" height="50" rx="3" fill="url(#line)"/>
+  <text x="78" y="55" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">Open-source activity</text>
+  <text x="78" y="81" fill="#94a3b8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="600" letter-spacing="0.5">CONSISTENT ITERATION · RESEARCH · ENGINEERING</text>
+  <g transform="translate(1020 37)" fill="none" stroke="#5eead4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <path d="M0 34 L24 14 L48 25 L72 4 L96 18"/>
+    <circle cx="0" cy="34" r="4" fill="#5eead4"/>
+    <circle cx="24" cy="14" r="4" fill="#5eead4"/>
+    <circle cx="48" cy="25" r="4" fill="#5eead4"/>
+    <circle cx="72" cy="4" r="4" fill="#5eead4"/>
+    <circle cx="96" cy="18" r="4" fill="#5eead4"/>
+  </g>
+</svg>
