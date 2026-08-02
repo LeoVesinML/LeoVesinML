@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Leo Vesin — AI researcher and machine learning engineer working on information retrieval, recommender systems, QUBO optimisation and conversational AI.">
+  <meta name="author" content="Leo Vesin">
+  <meta name="theme-color" content="#070b13">
+  <meta name="color-scheme" content="dark light">
+
+  <meta property="og:title" content="Leo Vesin — AI Research & Machine Learning">
+  <meta property="og:description" content="Research, engineering and selected work in machine learning, information retrieval, recommender systems and optimisation.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/138806946?v=4">
+
+  <title>Leo Vesin — AI Research & Machine Learning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="network-canvas" aria-hidden="true"></canvas>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="shell nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Leo Vesin — home">
+        <span class="brand-mark">LV</span>
+        <span class="brand-copy"><strong>Leo Vesin</strong><small>AI research & engineering</small></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span><span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#recognition">Recognition</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="nav-cv" href="cv.html" target="_blank" rel="noreferrer">CV <span>↗</span></a>
+        <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+          <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell">
+      <div class="hero-copy" data-reveal>
+        <div class="status-pill"><i></i> Open to research, internships and engineering opportunities</div>
+        <p class="eyebrow">AI researcher · ML engineer · computer science student</p>
+        <h1>Building intelligent systems that are <span>measurable, useful and honest.</span></h1>
+        <p class="hero-lead">
+          I work across <strong>machine learning, information retrieval, recommender systems, QUBO optimisation and conversational AI</strong> — turning research ideas into reproducible engineering.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Explore selected work</a>
+          <a class="button secondary" href="https://github.com/LeoVesinML" target="_blank" rel="noreferrer">GitHub profile <span>↗</span></a>
+          <a class="text-action" href="cv.html" target="_blank" rel="noreferrer">Open CV</a>
+        </div>
+        <div class="hero-proof" aria-label="Profile highlights">
+          <div><strong>Research Award</strong><span>Innopolis University · 2025</span></div>
+          <div><strong>Top 8</strong><span>TechArena 6G Challenge</span></div>
+          <div><strong>15,000+</strong><span>Poetry readers</span></div>
+        </div>
+      </div>
+
+      <div class="hero-card-wrap" data-reveal>
+        <div class="hero-card">
+          <div class="hero-card-grid" aria-hidden="true"></div>
+          <div class="hero-card-top mono"><span>PROFILE / 2026</span><span class="online"><i></i> AVAILABLE</span></div>
+          <div class="profile-image-wrap">
+            <img src="https://avatars.githubusercontent.com/u/138806946?v=4" alt="Portrait of Leo Vesin" width="260" height="260">
+            <div class="profile-orbit orbit-one"></div>
+            <div class="profile-orbit orbit-two"></div>
+          </div>
+          <div class="hero-card-copy">
+            <p class="mono accent">CURRENT FOCUS</p>
+            <h2>Research-led AI engineering</h2>
+            <ul>
+              <li>Semantic and neural retrieval</li>
+              <li>Conversational recommendation</li>
+              <li>Optimisation and reinforcement learning</li>
+            </ul>
+          </div>
+          <div class="hero-card-bottom mono"><span>PYTHON</span><span>PYTORCH</span><span>FASTAPI</span><span>LINUX</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Core disciplines">
+      <div class="ticker-track">
+        <span>Machine Learning</span><i></i><span>Information Retrieval</span><i></i><span>Recommender Systems</span><i></i><span>QUBO Optimisation</span><i></i><span>Conversational AI</span><i></i><span>Research Engineering</span><i></i>
+        <span>Machine Learning</span><i></i><span>Information Retrieval</span><i></i><span>Recommender Systems</span><i></i><span>QUBO Optimisation</span><i></i><span>Conversational AI</span><i></i><span>Research Engineering</span><i></i>
+      </div>
+    </section>
+
+    <section class="section shell" id="work">
+      <div class="section-head" data-reveal>
+        <div><p class="kicker">Selected work</p><h2>Projects built around a real problem and a defensible method.</h2></div>
+        <p>I prefer transparent baselines, measurable results and documentation that makes limitations visible.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured" data-reveal>
+          <div class="project-meta"><span>01 / RESEARCH</span><span>Featured</span></div>
+          <div class="project-symbol">⌁</div>
+          <h3>SemanticSplat / Beyond Proximity</h3>
+          <p>Graph-pruned semantic search for 3D Gaussian Splatting digital twins, designed around efficient retrieval and reproducible evaluation.</p>
+          <div class="tags"><span>Semantic retrieval</span><span>3D search</span><span>Evaluation</span><span>Research</span></div>
+          <div class="project-actions"><a href="https://beyond-proximity-public.vercel.app" target="_blank" rel="noreferrer">Open project <b>↗</b></a></div>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-meta"><span>02 / NLP + IR</span><span>Explainable baseline</span></div>
+          <div class="project-symbol">⌕</div>
+          <h3>NamazApp Support Recommender</h3>
+          <p>An explainable FAQ retrieval system using TF-IDF and similarity search, structured for evaluation and future ranking improvements.</p>
+          <div class="tags"><span>Python</span><span>Information retrieval</span><span>Flask</span><span>NLP</span></div>
+          <div class="project-actions"><a href="https://github.com/LeoVesinML/namaz_recommender" target="_blank" rel="noreferrer">Repository <b>↗</b></a></div>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-meta"><span>03 / CONVERSATIONAL AI</span><span>Team project</span></div>
+          <div class="project-symbol">◉</div>
+          <h3>MARS for Namaz.app</h3>
+          <p>A multi-agent conversational recommender with context-aware support, user profiles and asynchronous backend processing.</p>
+          <div class="tags"><span>FastAPI</span><span>MongoDB</span><span>Async Python</span><span>Docker</span></div>
+          <div class="project-actions"><a href="https://github.com/swp-team-1/MultiAgent-RecSys-for-Namaz.app" target="_blank" rel="noreferrer">Team repository <b>↗</b></a></div>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-meta"><span>04 / PRODUCT AI</span><span>Voice interface</span></div>
+          <div class="project-symbol">∿</div>
+          <h3>Voice AI</h3>
+          <p>A voice-first conversational application built with Next.js and modern speech and language-model integrations.</p>
+          <div class="tags"><span>TypeScript</span><span>Next.js</span><span>Speech AI</span><span>LLM integration</span></div>
+          <div class="project-actions"><a href="https://github.com/LeoVesinML/voice-ai" target="_blank" rel="noreferrer">Repository <b>↗</b></a></div>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-meta"><span>05 / DIGITAL SYSTEMS</span><span>Hardware</span></div>
+          <div class="project-symbol">ƒ</div>
+          <h3>Verilog FFT</h3>
+          <p>A hardware-oriented Fast Fourier Transform implementation demonstrating digital design, DSP fundamentals and algorithmic thinking.</p>
+          <div class="tags"><span>Verilog</span><span>DSP</span><span>Hardware</span><span>Algorithms</span></div>
+          <div class="project-actions"><a href="https://github.com/LeoVesinML/VerilogFFT" target="_blank" rel="noreferrer">Repository <b>↗</b></a></div>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-meta"><span>06 / HACKATHON</span><span>Applied prototype</span></div>
+          <div class="project-symbol">◇</div>
+          <h3>Blockchain Hackathon</h3>
+          <p>A team prototype created for the Singularity “Smart Breakthrough” hackathon, combining product thinking with blockchain engineering.</p>
+          <div class="tags"><span>Blockchain</span><span>Hackathon</span><span>Prototype</span><span>Teamwork</span></div>
+          <div class="project-actions"><a href="https://github.com/LeoVesinML/blockchain-hackathon" target="_blank" rel="noreferrer">Repository <b>↗</b></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section tinted" id="experience">
+      <div class="shell">
+        <div class="section-head narrow" data-reveal>
+          <div><p class="kicker">Experience</p><h2>Research practice backed by software engineering.</h2></div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-row" data-reveal>
+            <div class="timeline-date mono">JUN 2025 — APR 2026</div>
+            <div class="timeline-line"><i></i></div>
+            <div class="timeline-copy">
+              <div class="role-title"><h3>Research Assistant</h3><span>Q-Deep Research Lab</span></div>
+              <p>Worked at the intersection of artificial intelligence, machine learning and quantum-inspired optimisation.</p>
+              <ul>
+                <li>Reviewed research on quantum annealing, QUBO and hybrid classical–quantum algorithms.</li>
+                <li>Translated optimisation tasks into binary variables, objectives, constraints and penalty terms.</li>
+                <li>Implemented Python experiments and evaluated solution quality, efficiency and parameter sensitivity.</li>
+                <li>Prepared datasets, visualisations, tables and technical documentation for research discussions.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-row" data-reveal>
+            <div class="timeline-date mono">2025 — 2026</div>
+            <div class="timeline-line"><i></i></div>
+            <div class="timeline-copy">
+              <div class="role-title"><h3>MARS contributor</h3><span>Multi-Agent Recommender System for Namaz.app</span></div>
+              <p>Contributed to a completed conversational AI and personalised recommendation project under the supervision of Nursultan Askarbekuly.</p>
+              <ul>
+                <li>Worked with Python, FastAPI, asynchronous request processing and MongoDB.</li>
+                <li>Contributed to API design, modular architecture, Git-based teamwork, testing and deployment.</li>
+                <li>Prepared research directions involving GNNs, reinforcement learning and parameter-efficient transformer adaptation.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-row" data-reveal>
+            <div class="timeline-date mono">2024 — 2026</div>
+            <div class="timeline-line"><i></i></div>
+            <div class="timeline-copy">
+              <div class="role-title"><h3>Applied Artificial Intelligence</h3><span>Innopolis University</span></div>
+              <p>Completed two full undergraduate academic years with coursework and projects across computer science, machine learning and software engineering.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="recognition">
+      <div class="section-head" data-reveal>
+        <div><p class="kicker">Recognition</p><h2>Evidence of initiative across research, competition, sport and writing.</h2></div>
+        <p>Technical depth matters, but so do discipline, communication and the ability to build communities around ideas.</p>
+      </div>
+
+      <div class="achievement-grid">
+        <article class="achievement-card spotlight" data-reveal><span class="achievement-index mono">01</span><div class="achievement-icon">✦</div><h3>Research Award 2025</h3><p>Winner of the Innopolis University Research Award for outstanding academic and research-oriented work.</p><a href="https://media.innopolis.university/news/Research-Award-2025/" target="_blank" rel="noreferrer">Official announcement ↗</a></article>
+        <article class="achievement-card" data-reveal><span class="achievement-index mono">02</span><div class="achievement-icon">⌘</div><h3>ICPC representative</h3><p>Represented Innopolis University in the International Collegiate Programming Contest.</p></article>
+        <article class="achievement-card" data-reveal><span class="achievement-index mono">03</span><div class="achievement-icon">↗</div><h3>TechArena Top 8</h3><p>Top-eight finish in a challenge focused on optimisation of 6G traffic.</p></article>
+        <article class="achievement-card" data-reveal><span class="achievement-index mono">04</span><div class="achievement-icon">AI</div><h3>GAICA finalist</h3><p>Finalist in the Game AI Contest Arena, a nationwide AI developer competition.</p></article>
+        <article class="achievement-card" data-reveal><span class="achievement-index mono">05</span><div class="achievement-icon">◫</div><h3>Competitive sport</h3><p>Competitive arm wrestler and ranked in Russia’s Top 250 in racketlon.</p></article>
+        <article class="achievement-card" data-reveal><span class="achievement-index mono">06</span><div class="achievement-icon">¶</div><h3>15,000+ readers</h3><p>Founder and author of a poetry page developed into a substantial reader community.</p><a href="https://stihi.ru/avtor/levvizan" target="_blank" rel="noreferrer">Read the work ↗</a></article>
+      </div>
+    </section>
+
+    <section class="section tinted" id="toolkit">
+      <div class="shell toolkit-layout">
+        <div class="section-head narrow" data-reveal>
+          <div><p class="kicker">Technical toolkit</p><h2>From research notebook to deployed system.</h2></div>
+          <p>I work across modelling, data, backend development and experimentation, with a focus on readable code and reproducible results.</p>
+        </div>
+
+        <div class="toolkit-grid" data-reveal>
+          <div class="toolkit-card"><span>01</span><h3>Machine learning</h3><p>Python · PyTorch · scikit-learn · NumPy · Pandas · model evaluation</p></div>
+          <div class="toolkit-card"><span>02</span><h3>AI systems</h3><p>Information retrieval · recommender systems · conversational AI · RL · GNNs · QUBO</p></div>
+          <div class="toolkit-card"><span>03</span><h3>Backend & data</h3><p>FastAPI · Flask · MongoDB · SQL · Docker · asynchronous processing</p></div>
+          <div class="toolkit-card"><span>04</span><h3>Product & engineering</h3><p>TypeScript · React · Next.js · Git · Linux · testing · documentation</p></div>
+        </div>
+
+        <div class="principles" data-reveal>
+          <p class="mono accent">WORKING PRINCIPLES</p>
+          <div class="principle-grid">
+            <div><b>01</b><span>Start with a transparent baseline.</span></div>
+            <div><b>02</b><span>Measure quality with the right metrics.</span></div>
+            <div><b>03</b><span>Document assumptions and failure cases.</span></div>
+            <div><b>04</b><span>Keep claims proportional to evidence.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="github">
+      <div class="section-head" data-reveal>
+        <div><p class="kicker">Live GitHub</p><h2>Current public engineering activity.</h2></div>
+        <p>The data below is loaded directly from GitHub’s public API, keeping repository and activity information current.</p>
+      </div>
+
+      <div class="github-panel" data-reveal>
+        <div class="github-identity">
+          <img src="https://avatars.githubusercontent.com/u/138806946?v=4" alt="LeoVesinML GitHub avatar" width="82" height="82">
+          <div><p class="mono accent">@LEOVESINML</p><h3>Open-source profile</h3><a href="https://github.com/LeoVesinML" target="_blank" rel="noreferrer">github.com/LeoVesinML ↗</a></div>
+        </div>
+        <div class="github-stats" aria-live="polite">
+          <div><strong id="repo-count">—</strong><span>Public repositories</span></div>
+          <div><strong id="follower-count">—</strong><span>Followers</span></div>
+          <div><strong id="github-since">2023</strong><span>Building in public since</span></div>
+        </div>
+        <div class="activity-feed" id="activity-feed" aria-live="polite"><div class="activity-loading">Loading recent activity…</div></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="shell contact-card" data-reveal>
+        <div>
+          <p class="kicker">Contact</p>
+          <h2>Let’s build something that can be measured.</h2>
+          <p>I am open to AI research collaborations, internships and software engineering opportunities.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:vesin.leo@gmail.com">vesin.leo@gmail.com</a>
+          <button class="button secondary copy-email" type="button" data-email="vesin.leo@gmail.com">Copy email</button>
+          <a class="text-action" href="https://github.com/LeoVesinML" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell"><p>© <span id="year"></span> Leo Vesin. Built around clarity, evidence and useful work.</p><a href="#top">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>
