@@ -122,14 +122,6 @@ Contributed to a completed team project focused on conversational AI and persona
 - Keep experiments reproducible and claims proportional to evidence.
 - Treat research communication as part of engineering quality.
 
-<div align="center">
-
-<img src="assets/activity-section.svg" alt="Open-source activity" width="100%" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=LeoVesinML&bg_color=08111f&color=cbd5e1&line=2dd4bf&point=38bdf8&area=true&area_color=0f766e&hide_border=true&custom_title=Contribution%20Momentum" alt="Leo Vesin contribution activity graph" width="100%" />
-
-</div>
-
 ---
 
 <div align="center">
