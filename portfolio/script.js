@@ -5,6 +5,24 @@ const navMenu = document.querySelector('.nav-menu');
 const themeToggle = document.querySelector('.theme-toggle');
 const copyButton = document.querySelector('.copy-email');
 
+// Load the refined visual system without changing the original stylesheet pipeline.
+const refinedStyles = document.createElement('link');
+refinedStyles.rel = 'stylesheet';
+refinedStyles.href = 'design-v2.css';
+document.head.appendChild(refinedStyles);
+
+// The recruiter-facing portfolio deliberately avoids a raw GitHub activity feed.
+// Projects link to their repositories where relevant, while the page stays focused.
+document.getElementById('github')?.remove();
+document.querySelectorAll('a[href="#github"]').forEach((link) => link.remove());
+
+const contactEmail = 'vesin.lev@gmail.com';
+document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
+  link.href = `mailto:${contactEmail}`;
+  if (link.textContent.includes('@')) link.textContent = contactEmail;
+});
+if (copyButton) copyButton.dataset.email = contactEmail;
+
 const savedTheme = localStorage.getItem('portfolio-theme');
 if (savedTheme === 'light' || savedTheme === 'dark') root.dataset.theme = savedTheme;
 
@@ -57,79 +75,19 @@ document.querySelectorAll('[data-reveal]').forEach((element) => revealObserver.o
 
 document.getElementById('year').textContent = String(new Date().getFullYear());
 
-const eventNames = {
-  PushEvent: 'PUSH',
-  PullRequestEvent: 'PULL REQUEST',
-  IssuesEvent: 'ISSUE',
-  CreateEvent: 'CREATE',
-  WatchEvent: 'STAR',
-  ForkEvent: 'FORK',
-  IssueCommentEvent: 'COMMENT',
-  PullRequestReviewEvent: 'REVIEW'
-};
-
-function activityDescription(event) {
-  const repo = event.repo?.name || 'GitHub';
-  switch (event.type) {
-    case 'PushEvent': {
-      const count = event.payload?.commits?.length || 1;
-      return `${count} commit${count === 1 ? '' : 's'} pushed to ${repo}`;
-    }
-    case 'PullRequestEvent':
-      return `${event.payload?.action || 'updated'} pull request in ${repo}`;
-    case 'IssuesEvent':
-      return `${event.payload?.action || 'updated'} issue in ${repo}`;
-    case 'CreateEvent':
-      return `Created ${event.payload?.ref_type || 'repository item'} in ${repo}`;
-    case 'WatchEvent':
-      return `Starred ${repo}`;
-    case 'ForkEvent':
-      return `Forked ${repo}`;
-    default:
-      return `Activity in ${repo}`;
-  }
+// Subtle mouse depth on the profile card for desktop users.
+const profileCard = document.querySelector('.hero-card');
+if (profileCard && window.matchMedia('(pointer:fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  profileCard.addEventListener('pointermove', (event) => {
+    const rect = profileCard.getBoundingClientRect();
+    const x = (event.clientX - rect.left) / rect.width - 0.5;
+    const y = (event.clientY - rect.top) / rect.height - 0.5;
+    profileCard.style.transform = `perspective(1100px) rotateY(${x * 5}deg) rotateX(${y * -4}deg) translateY(-4px)`;
+  });
+  profileCard.addEventListener('pointerleave', () => {
+    profileCard.style.transform = '';
+  });
 }
-
-async function loadGitHub() {
-  const feed = document.getElementById('activity-feed');
-  try {
-    const [profileResponse, eventsResponse] = await Promise.all([
-      fetch('https://api.github.com/users/LeoVesinML'),
-      fetch('https://api.github.com/users/LeoVesinML/events/public?per_page=8')
-    ]);
-    if (!profileResponse.ok || !eventsResponse.ok) throw new Error('GitHub API unavailable');
-
-    const profile = await profileResponse.json();
-    const events = await eventsResponse.json();
-
-    document.getElementById('repo-count').textContent = profile.public_repos ?? '—';
-    document.getElementById('follower-count').textContent = profile.followers ?? '—';
-    if (profile.created_at) document.getElementById('github-since').textContent = new Date(profile.created_at).getFullYear();
-
-    feed.innerHTML = '';
-    const visibleEvents = events.slice(0, 5);
-    if (!visibleEvents.length) {
-      feed.innerHTML = '<div class="activity-loading">No recent public activity to display.</div>';
-      return;
-    }
-
-    visibleEvents.forEach((event) => {
-      const row = document.createElement('div');
-      row.className = 'activity-row';
-      const repoUrl = `https://github.com/${event.repo?.name || 'LeoVesinML'}`;
-      row.innerHTML = `
-        <span class="activity-type">${eventNames[event.type] || 'ACTIVITY'}</span>
-        <a href="${repoUrl}" target="_blank" rel="noreferrer">${activityDescription(event)}</a>
-        <time datetime="${event.created_at}">${new Intl.DateTimeFormat('en', { month: 'short', day: 'numeric' }).format(new Date(event.created_at))}</time>
-      `;
-      feed.appendChild(row);
-    });
-  } catch {
-    feed.innerHTML = '<div class="activity-loading">Live GitHub data is temporarily unavailable. Visit the profile directly.</div>';
-  }
-}
-
-loadGitHub();
 
 const canvas = document.getElementById('network-canvas');
 const ctx = canvas?.getContext('2d');
@@ -144,12 +102,12 @@ function resizeCanvas() {
   canvas.style.width = `${window.innerWidth}px`;
   canvas.style.height = `${window.innerHeight}px`;
   ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
-  const pointCount = Math.min(70, Math.max(28, Math.floor(window.innerWidth / 22)));
+  const pointCount = Math.min(56, Math.max(24, Math.floor(window.innerWidth / 28)));
   points = Array.from({ length: pointCount }, () => ({
     x: Math.random() * window.innerWidth,
     y: Math.random() * window.innerHeight,
-    vx: (Math.random() - 0.5) * 0.18,
-    vy: (Math.random() - 0.5) * 0.18
+    vx: (Math.random() - 0.5) * 0.12,
+    vy: (Math.random() - 0.5) * 0.12
   }));
 }
 
@@ -157,14 +115,15 @@ function drawNetwork() {
   if (!ctx) return;
   ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
   const light = root.dataset.theme === 'light';
-  ctx.fillStyle = light ? 'rgba(15, 23, 42, .18)' : 'rgba(99, 242, 207, .22)';
+  ctx.fillStyle = light ? 'rgba(79,70,229,.13)' : 'rgba(139,92,246,.20)';
+
   points.forEach((point) => {
     point.x += point.vx;
     point.y += point.vy;
     if (point.x < 0 || point.x > window.innerWidth) point.vx *= -1;
     if (point.y < 0 || point.y > window.innerHeight) point.vy *= -1;
     ctx.beginPath();
-    ctx.arc(point.x, point.y, 1.2, 0, Math.PI * 2);
+    ctx.arc(point.x, point.y, 1.05, 0, Math.PI * 2);
     ctx.fill();
   });
 
@@ -173,11 +132,12 @@ function drawNetwork() {
       const dx = points[i].x - points[j].x;
       const dy = points[i].y - points[j].y;
       const distance = Math.hypot(dx, dy);
-      if (distance < 125) {
+      if (distance < 118) {
+        const strength = 1 - distance / 118;
         ctx.strokeStyle = light
-          ? `rgba(15, 23, 42, ${0.07 * (1 - distance / 125)})`
-          : `rgba(106, 168, 255, ${0.13 * (1 - distance / 125)})`;
-        ctx.lineWidth = 0.7;
+          ? `rgba(79,70,229,${0.05 * strength})`
+          : `rgba(34,211,238,${0.09 * strength})`;
+        ctx.lineWidth = 0.65;
         ctx.beginPath();
         ctx.moveTo(points[i].x, points[i].y);
         ctx.lineTo(points[j].x, points[j].y);
